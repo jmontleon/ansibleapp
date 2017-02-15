@@ -11,6 +11,7 @@ setup(
     author="Fusor",
     author_email="ansible-apps@redhat.com",
     packages=find_packages(),
+    install_requires=reqs,
     package_data={'ansibleapp': ['dat/ex.Dockerfile']},
     entry_points={
         'console_scripts': ['ansibleapp = ansibleapp.cli:main']
